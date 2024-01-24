@@ -1,0 +1,4 @@
+   $commandParts = explode(' ', $command);
+    switch ($commandParts[0]) {
+        case 'commit':
+            $repo->commit(implode(' ', array_slice($commandParts, 1)));
